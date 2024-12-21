@@ -1,5 +1,5 @@
 # Windows Dotfiles
-Just run the installer 🤷
+Just install the dots run the following command:
 ```
 python install.py
 ```
