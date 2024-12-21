@@ -1,2 +1,5 @@
-# win-dotfiles
-🪟 My Windows Dotfiles
+# Windows Dotfiles
+Just run the installer 🤷
+```
+python install.py
+```
