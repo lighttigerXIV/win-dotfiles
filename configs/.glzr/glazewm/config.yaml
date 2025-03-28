@@ -1,7 +1,8 @@
 general:
   # Commands to run when the WM has started (e.g. to run a script or launch
   # another application). Here we are running a batch script to start Zebar.
-  startup_commands: ['shell-exec %userprofile%/.glzr/zebar/start.bat']
+  # startup_commands: ['shell-exec %userprofile%/.glzr/zebar/start.bat']
+  startup_commands: []
 
   # Whether to automatically focus windows underneath the cursor.
   focus_follows_cursor: false
@@ -25,7 +26,7 @@ gaps:
 
   # Gap between windows and the screen edge.
   outer_gap:
-    top: '56px'
+    top: '16px'
     right: '16px'
     bottom: '16px'
     left: '16px'
@@ -37,13 +38,13 @@ window_effects:
     # ** Exclusive to Windows 11 due to API limitations.
     border:
       enabled: true
-      color: '#FFE072'
+      color: '#A8A8A8'
 
   # Visual effects to apply to non-focused windows.
   other_windows:
     border:
       enabled: true
-      color: '#1B0B00'
+      color: '#141414'
 
 window_behavior:
   # New windows are created in this state whenever possible.
@@ -227,7 +228,7 @@ keybindings:
   # Launch CMD terminal. Alternatively, use `shell-exec wt` or
   # `shell-exec %ProgramFiles%/Git/git-bash.exe` to start Windows
   # Terminal and Git Bash respectively.
-  - commands: ['shell-exec %ProgramFiles%/WezTerm/wezterm-gui.exe']
+  - commands: ['shell-exec wt']
     bindings: ['alt+t']
 
   # Focus the next/previous workspace defined in `workspaces` config.
